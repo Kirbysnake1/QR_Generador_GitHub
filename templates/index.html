@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de QR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/qr.css') }}">
+</head>
+<body>
+    <form action="/" method="post">
+        <h1>Genera un código QR para un URL</h1> <!-- Encabezado -->
+        <input type="text" name="url" placeholder="Ingresa un URL aquí" required> <!-- Campo de entrada -->
+        <button type="submit">Generar QR</button> <!-- Botón de envío -->
+    </form>
+</body>
+</html>

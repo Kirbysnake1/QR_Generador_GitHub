@@ -1,0 +1,31 @@
+/* main.css */
+/* General styles for the entire application */
+/* Estilos generales para toda la aplicación */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+input, button, a {
+    padding: 10px; /* Espaciado interno de los elementos de entrada */
+    margin-top: 10px; /* Espaciado superior entre elementos */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde con color gris */
+}
+
+button, a {
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color de texto */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+button:hover, a:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar por encima */
+}

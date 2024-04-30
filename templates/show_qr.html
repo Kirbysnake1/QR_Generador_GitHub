@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar QR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/show_qr.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Aquí está tu código QR</h1> <!-- Encabezado -->
+        <img id="qr-image" src="{{ img_data }}" alt="QR Code"> <!-- Imagen del código QR -->
+        <a href="/" class="generate-another">Generar otro QR</a> <!-- Enlace para generar otro QR -->
+        <button onclick="downloadQR()">Descargar QR</button> <!-- Botón para descargar el código QR -->
+    </div>
+
+    <script>
+        function downloadQR() {
+            var link = document.createElement('a'); // Crea un elemento de enlace
+            link.href = document.getElementById('qr-image').src; // Establece el URL de descarga como la fuente de la imagen del código QR
+            link.download = 'qr_code.png'; // Establece el nombre de archivo para descargar como 'qr_code.png'
+            document.body.appendChild(link); // Agrega el enlace al cuerpo del documento
+            link.click(); // Simula un clic en el enlace
+            document.body.removeChild(link); // Elimina el enlace del cuerpo del documento
+        }
+    </script>
+</body>
+</html>

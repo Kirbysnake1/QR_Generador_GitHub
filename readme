@@ -1,0 +1,56 @@
+# Generador de Código QR con Flask
+
+Este proyecto es un generador de código QR simple construido con Flask, 
+un micro-framework web para Python. Permite a los usuarios generar códigos 
+QR para URLs específicos. Una vez que se ingresa un URL en el formulario, 
+el proyecto utiliza la biblioteca qrcode para generar el código QR correspondiente, 
+que luego se muestra en una página web. El proyecto también proporciona la opción de 
+descargar el código QR generado como una imagen PNG. Esta aplicación es útil para crear 
+códigos QR personalizados para enlaces web.
+
+## Instalación
+
+1. Clona este repositorio en tu máquina local.
+2. Asegúrate de tener Python y pip instalados.
+3. Asegúrate de tener instaladas las siguientes bibliotecas ejecutando `pip install Flask qrcode`.
+
+## Uso
+
+1. Ejecuta `python app.py` para iniciar la aplicación.
+2. Abre tu navegador web y ve a `http://localhost:5000`.
+3. Ingresa un URL en el formulario y haz clic en "Generar QR".
+4. Se mostrará el código QR generado.
+
+## Bibliotecas utilizadas
+
+- Flask: Micro-framework web para Python.
+- qrcode: Biblioteca para generar códigos QR.
+
+
+################### English ########################
+
+# QR Code Generator with Flask
+
+This project is a simple QR code generator built with Flask, a micro web framework for Python. 
+It allows users to generate QR codes for specific URLs. Once a URL is entered into the form, 
+the project uses the qrcode library to generate the corresponding QR code, which is then displayed 
+on a web page. The project also provides the option to download the generated QR code as a PNG image. 
+This application is useful for creating custom QR codes for web links.
+
+## Installation
+
+1. Clone this repository to your local machine.
+2. Make sure you have Python and pip installed.
+3. Make sure you have the following libraries installed by running `pip install Flask qrcode`.
+
+## Usage
+
+1. Run `python app.py` to start the application.
+2. Open your web browser and go to `http://localhost:5000`.
+3. Enter a URL in the form and click "Generate QR".
+4. The generated QR code will be displayed.
+
+## Libraries Used
+
+- Flask: Micro web framework for Python.
+- qrcode: Library for generating QR codes.

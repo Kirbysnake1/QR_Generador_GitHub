@@ -1,0 +1,44 @@
+/* qr.css */
+/* Styles for the page displaying the QR code */
+/* Estilos para la página que muestra el código QR */
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/18/19/08/background-1835437_960_720.jpg'); /* Fondo con imagen */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo semitransparente */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra */
+    width: 300px; /* Ancho del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+h1 {
+    color: #333; /* Color del texto */
+}
+
+img {
+    display: block; /* Muestra la imagen como bloque */
+    margin: 20px auto; /* Margen superior e inferior automático para centrar la imagen */
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+a {
+    display: inline-block; /* Muestra el enlace como bloque en línea */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-top: 20px; /* Margen superior */
+}
+
+a:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar por encima */
+}
